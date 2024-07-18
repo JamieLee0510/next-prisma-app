@@ -35,6 +35,9 @@ RUN npm run build
 FROM base AS runner
 WORKDIR /app
 
+# 安裝 dumb-init
+RUN apk add --no-cache dumb-init
+
 ENV NODE_ENV production
 # 關閉nextjs遙測追蹤
 ENV NEXT_TELEMETRY_DISABLED 1
