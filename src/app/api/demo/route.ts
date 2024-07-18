@@ -5,8 +5,8 @@ export async function GET(){
     const user = await prisma.user.create({
         data: {
             name: "demo01",
-            email:"",
-            picture:"",
+            email:"demo@gamile.com",
+            picture:"asdf.png",
             github_id:"",
         },
     });
