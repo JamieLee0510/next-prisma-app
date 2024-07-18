@@ -5,6 +5,7 @@ generator client {
   // important to support Prisma Query engine in Alpine linux,
   // otherwise "PrismaClientInitializationError2 [PrismaClientInitializationError]: Query engine binary for current platform "linux-musl" could not be found.
   // binaryTargets = ["native", "linux-musl"]
+  previewFeatures = ["driverAdapters"]
 }
 
 datasource db {

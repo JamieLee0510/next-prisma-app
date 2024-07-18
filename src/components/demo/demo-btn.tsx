@@ -8,6 +8,6 @@ export default function DemoBtn() {
         alert("update db success")
     }
   return (
-    <button onClick={clickHandler}>DemoBtn</button>
+    <button onClick={()=>{clickHandler()}}>DemoBtn</button>
   )
 }
